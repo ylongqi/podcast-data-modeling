@@ -25,7 +25,7 @@ A pretrained model is also included. Please direct any questions to [Longqi Yang
 * Set $S_b$ (used for popularity prediction): [audio_links/podcast_episodes_sb.txt](audio_links/podcast_episodes_sa.txt).
 
 Each line of these files contains an podcast episode represented by a JSON object with the following fields:
-```json
+```
 {
     "url": the URL to download the raw audio,
     "itunes_channel_id": the iTunes channel that the episode belongs to,
@@ -39,7 +39,7 @@ Each line of these files contains an podcast episode represented by a JSON objec
     * Training data: [attributes_labels/energy_train.txt](attributes_labels/energy_train.txt).
     * Testing data: [attributes_labels/energy_test.txt](attributes_labels/energy_test.txt).
     * Format: each line contains a snippet (~12s) represented by a JSON object:
-    ```json
+    ```
     {
         "label": 1 denotes energetic and 0 denotes calm,
         "id": the episode ID,
@@ -54,7 +54,7 @@ Each line of these files contains an podcast episode represented by a JSON objec
     * Training data: [popularity_labels/popularity_train.txt](popularity_labels/popularity_train.txt).
     * Testing data: [popularity_labels/popularity_test.txt](popularity_labels/popularity_test.txt).
     * Format: each line contains an episode represented by a JSON object:
-    ```json
+    ```
     {
         "label": 1 denotes popular and 0 denotes long tail,
         "id": the episode ID,
