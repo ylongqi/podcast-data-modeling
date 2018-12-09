@@ -1,0 +1,9 @@
+data/*
+pretrained_model/*
+.ipynb_checkpoints/*
+attributes_labels/.ipynb_checkpoints/
+audio_links/.ipynb_checkpoints/
+popularity_labels/.ipynb_checkpoints/
+__pycache__/*
+*.tar.gz
+
