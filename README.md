@@ -21,8 +21,8 @@ A pretrained model is also included. Please direct any questions to [Longqi Yang
 ## Data descriptions
 
 ### Raw podcast audio URLs
-* Set $S_a$ (used for ALPR training and attributes prediction): [audio_links/podcast_episodes_sa.txt](audio_links/podcast_episodes_sa.txt).
-* Set $S_b$ (used for popularity prediction): [audio_links/podcast_episodes_sb.txt](audio_links/podcast_episodes_sa.txt).
+* Set <img height="16px" src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{300}&space;S_a" title="S_a" /> (used for ALPR training and attributes prediction): [audio_links/podcast_episodes_sa.txt](audio_links/podcast_episodes_sa.txt).
+* Set <img height="16px" src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{300}&space;S_b" title="S_b" /> (used for popularity prediction): [audio_links/podcast_episodes_sb.txt](audio_links/podcast_episodes_sa.txt).
 
 Each line of these files contains an podcast episode represented by a JSON object with the following fields:
 ```
