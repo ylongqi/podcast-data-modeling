@@ -3,6 +3,12 @@ from ops import *
 
 class ALPRExtractor(object):
     
+    """ALPR feature extractor
+    
+    Extract ALPR features using a trained model.
+    """
+    
+    
     def __init__(self):
     
         df_dim = 64
@@ -29,10 +35,25 @@ class ALPRExtractor(object):
             self._saver = tf.train.Saver()
     
     def load_model(self, path):
-        
+        """Load pretrained ALPR model
+
+        Args:
+            path (str): the directory to a pretrained ALPR model.
+
+        """
+
         self._saver.restore(self._sess, path)
     
     def forward(self, spectrograms):
+        """Extract ALPR features for given spectrograms (i.e., conduct a forward pass)
+
+        Args:
+            spectrograms (numpy array): input spectrograms.
+        
+        Returns:
+            ALPR features.
+
+        """
         
         return self._sess.run(self._tf_features,
                               feed_dict={self._spect_tf: spectrograms})

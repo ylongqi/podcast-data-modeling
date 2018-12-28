@@ -18,6 +18,12 @@ A pretrained model is also included. Please direct any questions to [Longqi Yang
 }
 ```
 
+## Code descriptions
+* Converting a WAV audio into a Mel-Spectrogram: ```wav_to_spectrogram.py```.
+* Training ALPR: ```alpr.py``` (The **files** variable needs to be specified - it should contain a list of spectrogram files).
+* Extracting ALPR using a pretrained model: ```alpr_extractor.py```.
+* Reproducing experimental results: ```energy_prediction.ipynb```.
+
 ## Data descriptions
 
 ### Raw podcast audio URLs
