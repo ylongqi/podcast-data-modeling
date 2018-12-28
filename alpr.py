@@ -66,7 +66,7 @@ class ALPR(object):
             output_height: the height of generated spectrograms.
             output_width: the width of generated spectrograms.
             z_dim: the dimensionality of the vector z.
-            gf_dim: controlling the model size the generator.
+            gf_dim: controlling the model size of the generator.
             df_dim: controlling the model size of the discriminator.
         """
         
